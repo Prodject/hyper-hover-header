@@ -13,7 +13,8 @@ exports.decorateConfig = (config) => {
 	transition: top 0.3s ease;
 	background: ${config.backgroundColor}; 
       }
-      .header_header .header_windowHeader .header_appTitle, 
+      .header_header .header_windowHeader .header_appTitle,
+      .header_header svg.header_shape,
       .header_header .header_windowHeader .header_windowControls {
 	opacity: 0;
 	transition: opacity 0.3s ease;
@@ -31,6 +32,7 @@ exports.decorateConfig = (config) => {
 	top: 34px !important;
       }
       .header_header:hover .header_windowHeader .header_appTitle,
+      .header_header:hover svg.header_shape,
       .header_header:hover .header_windowHeader .header_windowControls {
 	opacity: 1;
       }
